@@ -25,21 +25,21 @@
 dmarc.exe/  
 ├── core/  
 │ ├── dmarc_parser.py # Parses .gz XML reports  
-│ └── dmarc_checker.py # Checks DMARC TXT DNS record
-├── advanced/
-│ ├── prometheus_exporter.py # Flask app for /metrics
-│ ├── abuse_reporter.py # Auto-abuse IP reporting
-│ └── gpt_summariser.py # Uses GPT to summarise findings
-├── data/ # Put sample reports here
-├── config/
-│ └── config.ini # API keys and secrets (excluded from git)
-├── scripts/
-│ ├── run_daily.sh # Cron/automation entry point
-│ └── cron_example.txt # Crontab example
-├── main.py # Demo runner
-├── requirements.txt
-├── .gitignore
-└── README.md
+│ └── dmarc_checker.py # Checks DMARC TXT DNS record  
+├── advanced/  
+│ ├── prometheus_exporter.py # Flask app for /metrics  
+│ ├── abuse_reporter.py # Auto-abuse IP reporting  
+│ └── gpt_summariser.py # Uses GPT to summarise findings  
+├── data/ # Put sample reports here  
+├── config/  
+│ └── config.ini # API keys and secrets (excluded from git)  
+├── scripts/  
+│ ├── run_daily.sh # Cron/automation entry point  
+│ └── cron_example.txt # Crontab example  
+├── main.py # Demo runner  
+├── requirements.txt  
+├── .gitignore  
+└── README.md  
 
 
 ---
