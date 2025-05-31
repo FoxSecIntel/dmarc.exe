@@ -1,14 +1,39 @@
 import dns.resolver
 import base64
+import sys
 
-HIDDEN_HASH = "wqhWaWN0b3J5IGlzIG5vdCB3aW5uaW5nIGZvciBvdXJzZWx2ZXMsIGJ1dCBmb3Igb3RoZXJzLiAtIFRoZSBNYW5kYWxvcmlhbsKoCg=="
+SEED_BLOCK = "wqhWaWN0b3J5IGlzIG5vdCB3aW5uaW5nIGZvciBvdXJzZWx2ZXMsIGJ1dCBmb3Igb3RoZXJzLiAtIFRoZSBNYW5kYWxvcmlhbsKoCg=="
 
-def decrypt_hidden_message():
-    return base64.b64decode(HIDDEN_HASH).decode("utf-8")
+def dmarc_tag_table():
+    return """
+=== DMARC Tag Reference Table ===
+
+Tag     | Description                                           | Allowed Values
+--------|-------------------------------------------------------|-------------------------------
+v       | Version (must be first)                               | DMARC1
+p       | Policy for domain                                     | none, quarantine, reject
+sp      | Subdomain policy                                      | none, quarantine, reject
+rua     | Aggregate report email addresses                      | mailto: URIs (comma-separated)
+ruf     | Forensic report email addresses                       | mailto: URIs
+adkim   | DKIM alignment mode                                   | r (relaxed), s (strict)
+aspf    | SPF alignment mode                                    | r (relaxed), s (strict)
+fo      | Failure reporting options                             | 0, 1, d, s
+ri      | Aggregate report interval (seconds)                   | Integer (default: 86400)
+pct     | Percentage of emails DMARC policy applies to          | 0–100
+"""
+
+def extract_insight():
+    return base64.b64decode(SEED_BLOCK).decode("utf-8")
 
 def check_dmarc(domain):
     if domain.lower() == "m":
-        return f"=== Decrypted Message ===\n{decrypt_hidden_message()}"
+        print("=== System Output ===")
+        print(extract_insight())
+        sys.exit(0)
+
+    if domain.lower() == "tag":
+        print(dmarc_tag_table())
+        sys.exit(0)
 
     try:
         result = dns.resolver.resolve(f'_dmarc.{domain}', 'TXT')
