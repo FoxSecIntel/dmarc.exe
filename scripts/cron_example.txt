@@ -1,0 +1,2 @@
+# Runs the DMARC script every day at 03:00
+0 3 * * * /path/to/your/repo/scripts/run_daily.sh >> /var/log/dmarc.log 2>&1
