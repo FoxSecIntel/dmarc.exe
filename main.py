@@ -1,9 +1,11 @@
+import sys
 from core.dmarc_checker import check_dmarc
 from core.dmarc_parser import parse_dmarc_gzip
 
 def main():
+    domain = sys.argv[1]
     print("=== DMARC Record Check ===")
-    result = check_dmarc("google.com")
+    result = check_dmarc(domain)
     print(result)
 
     print("\n=== DMARC Report Parsing ===")
