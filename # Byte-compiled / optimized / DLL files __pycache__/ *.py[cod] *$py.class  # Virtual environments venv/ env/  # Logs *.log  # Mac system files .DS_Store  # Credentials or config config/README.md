@@ -1,4 +1,4 @@
-# 📬 DMARC-NARC
+# 📬 DMARC.exe
 
 **Barbell-style DMARC toolkit** — combining dead-simple, reliable scripts with advanced, experimental features like GPT analysis and Prometheus dashboards.
 
@@ -22,9 +22,9 @@
 
 ## 🗂 Repo Structure
 
-dmarc-narc/
-├── core/
-│ ├── dmarc_parser.py # Parses .gz XML reports
+dmarc.exe/  
+├── core/  
+│ ├── dmarc_parser.py # Parses .gz XML reports  
 │ └── dmarc_checker.py # Checks DMARC TXT DNS record
 ├── advanced/
 │ ├── prometheus_exporter.py # Flask app for /metrics
