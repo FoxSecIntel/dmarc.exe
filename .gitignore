@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+
+# Logs
+*.log
+
+# Mac system files
+.DS_Store
+
+# Credentials or config
+config/config.ini
+
+# Output files
+*.gz
+*.zip
+*.tar
+*.rar
+
+# Jupyter/IPython
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+
+# pyenv
+.python-version
