@@ -3,7 +3,7 @@ from core.dmarc_parser import parse_dmarc_gzip
 
 def main():
     print("=== DMARC Record Check ===")
-    result = check_dmarc("example.com")
+    result = check_dmarc("google.com")
     print(result)
 
     print("\n=== DMARC Report Parsing ===")
