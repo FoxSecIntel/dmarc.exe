@@ -58,6 +58,7 @@ print(check_dmarc("example.com"))
 from core.dmarc_parser import parse_dmarc_gzip
 records = parse_dmarc_gzip("data/sample_report.xml.gz")
 print(records)
+```
 
 ## Goals
 Give threat intel and mail engineers rapid insight into spoofing attacks
