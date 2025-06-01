@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
 # 📬 DMARC.exe
 
 **Barbell-style DMARC toolkit** — combining dead-simple, reliable scripts with advanced, experimental features like GPT analysis and Prometheus dashboards.
