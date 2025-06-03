@@ -1,6 +1,6 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Visitor Count](https://shields-io-visitor-counter.onrender.com/badge?page=foxsecintel-dmarc.exe&label=Visitors&color=brightgreen)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=github.com/FoxSecIntel/dmarc.exe)
 
 
 # 📬 DMARC.exe
