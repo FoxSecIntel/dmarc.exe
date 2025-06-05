@@ -50,20 +50,17 @@ dmarc.exe
 
 ## 🧪 Usage
 
-### Install dependencies
+This tool parses DMARC XML reports and displays per-IP activity, DMARC policy outcomes, and optionally exports data to Prometheus metrics or reports abusers to AbuseIPDB.
 
-Use Python 3.10+ and install the required packages:
+### Basic Usage
 
 ```bash
-pip install -r requirements.txt
-
-from core.dmarc_checker import check_dmarc
-print(check_dmarc("example.com"))
-
-from core.dmarc_parser import parse_dmarc_gzip
-records = parse_dmarc_gzip("data/sample_report.xml.gz")
-print(records)
+python main.py example.com
 ```
+This command:  
+Checks the DMARC record for example.com  
+Parses the sample report at data/sample_report.xml.gz  
+Outputs results to the terminal  
 
 ## Goals
 Give threat intel and mail engineers rapid insight into spoofing attacks
