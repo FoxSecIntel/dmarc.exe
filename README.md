@@ -58,9 +58,9 @@ This tool parses DMARC XML reports and displays per-IP activity, DMARC policy ou
 python main.py example.com
 ```
 This command:  
-Checks the DMARC record for example.com  
-Parses the sample report at data/sample_report.xml.gz  
-Outputs results to the terminal  
+-Checks the DMARC record for example.com  
+-Parses the sample report at data/sample_report.xml.gz  
+-Outputs results to the terminal  
 
 ## Goals
 Give threat intel and mail engineers rapid insight into spoofing attacks
