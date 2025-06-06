@@ -63,8 +63,6 @@ This command:
 -Outputs results to the terminal  
 
 ## Goals
-Give threat intel and mail engineers rapid insight into spoofing attacks
-
-Enable visibility and automation at any scale — even cron
-
-Experiment with AI, not depend on it
+-Give threat intel and mail engineers rapid insight into spoofing attacks
+-Enable visibility and automation at any scale — even cron
+-Experiment with AI, not depend on it
