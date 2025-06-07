@@ -48,6 +48,16 @@ dmarc.exe
 
 ---
 
+## 🔧 Install Dependencies
+
+To install all necessary packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## 🧪 Usage
 
 This tool parses DMARC XML reports and displays per-IP activity, DMARC policy outcomes, and optionally exports data to Prometheus metrics or reports abusers to AbuseIPDB.
