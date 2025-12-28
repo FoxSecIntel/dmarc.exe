@@ -5,7 +5,7 @@
 
 # 📬 DMARC.exe
 
-**Barbell-style DMARC toolkit** — combining dead-simple, reliable scripts with advanced, experimental features like GPT analysis and Prometheus dashboards.
+**DMARC toolkit** — combining dead-simple, reliable scripts with advanced, experimental features like GPT analysis and Prometheus dashboards.
 
 > Lightweight. Brutal. Flexible. Just like a good kettlebell workout.
 
