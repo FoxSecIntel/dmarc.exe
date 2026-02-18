@@ -21,8 +21,12 @@ def _validate_domain(domain: str) -> str:
     if hostname != domain.lower() and hostname != domain:
         raise ValueError("Invalid domain format")
 
+    # Allow special internal trigger domains used by downstream logic.
+    if domain.lower() in {"m", "tag"}:
+        return domain
+
     if "." not in domain:
-        raise ValueError("Domain should include a TLD (e.g. example.com)")
+        raise ValueError("Domain should include a TLD (e.g. example.com), or be one of: m, tag")
 
     return domain
 
