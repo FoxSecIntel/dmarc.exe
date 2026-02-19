@@ -72,6 +72,26 @@ This command:
 -Parses the sample report at data/sample_report.xml.gz  
 -Outputs results to the terminal  
 
+### CLI Modes
+
+Run only DMARC check:
+
+```bash
+python main.py example.com --check-only
+```
+
+Run only report parsing:
+
+```bash
+python main.py --parse-only --report data/sample_report.xml.gz
+```
+
+Use a custom report path while checking a domain:
+
+```bash
+python main.py example.com --report /path/to/report.xml.gz
+```
+
 ## Goals
 -Give threat intel and mail engineers rapid insight into spoofing attacks  
 -Enable visibility and automation at any scale — even cron  

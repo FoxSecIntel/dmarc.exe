@@ -1,6 +1,5 @@
 import dns.resolver
 import base64
-import sys
 
 SEED_BLOCK = "wqhWaWN0b3J5IGlzIG5vdCB3aW5uaW5nIGZvciBvdXJzZWx2ZXMsIGJ1dCBmb3Igb3RoZXJzLiAtIFRoZSBNYW5kYWxvcmlhbsKoCg=="
 
@@ -27,13 +26,10 @@ def extract_insight():
 
 def check_dmarc(domain):
     if domain.lower() == "m":
-        print("=== System Output ===")
-        print(extract_insight())
-        sys.exit(0)
+        return "=== System Output ===\n" + extract_insight().strip()
 
     if domain.lower() == "tag":
-        print(dmarc_tag_table())
-        sys.exit(0)
+        return dmarc_tag_table().strip()
 
     try:
         result = dns.resolver.resolve(f'_dmarc.{domain}', 'TXT')
