@@ -95,4 +95,13 @@ python main.py example.com --report /path/to/report.xml.gz
 ## Goals
 -Give threat intel and mail engineers rapid insight into spoofing attacks  
 -Enable visibility and automation at any scale — even cron  
--Experiment with AI, not depend on it  
+-Experiment with AI, not depend on it
+
+## Quick Demo
+
+```bash
+# 1) Run a core check
+# 2) Request JSON output
+# 3) Pipe into jq for analyst workflows
+```
+
