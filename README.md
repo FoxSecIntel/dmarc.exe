@@ -22,13 +22,13 @@ A DMARC and email-auth workflow toolkit focused on operational reliability and a
 - Optional advanced reporting and metrics components
 - Daily-run and cron-oriented workflow support
 
-## 🧱 Core Features (Low Risk, High Certainty)
+## Core Features (Low Risk, High Certainty)
 
 - ✅ Check if a domain has a valid DMARC record
 - ✅ Parse zipped DMARC XML aggregate reports
 - ✅ CLI-compatible and self-contained
 
-## 🚀 Advanced Features (High Risk, High Reward)
+## Advanced Features (High Risk, High Reward)
 
 - 🚀 Prometheus-style `/metrics` export
 - 🚀 AbuseIPDB auto-takedown script
@@ -36,7 +36,7 @@ A DMARC and email-auth workflow toolkit focused on operational reliability and a
 
 ---
 
-## 🗂 Repo Structure
+## Repo Structure
 
 dmarc.exe  
 ├── core/  
@@ -59,7 +59,7 @@ dmarc.exe
 
 ---
 
-## 🔧 Install Dependencies
+## Install Dependencies
 
 To install all necessary packages:
 
@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 Usage
+## Usage
 
 This tool parses DMARC XML reports and displays per-IP activity, DMARC policy outcomes, and optionally exports data to Prometheus metrics or reports abusers to AbuseIPDB.
 
