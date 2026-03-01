@@ -1,15 +1,26 @@
+![Status](https://img.shields.io/badge/status-maintained-brightgreen)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![visitors](https://visitor-badge.glitch.me/badge?page_id=github.com/FoxSecIntel/dmarc.exe)
 
+# DMARC.exe
 
-# 📬 DMARC.exe
+A DMARC and email-auth workflow toolkit focused on operational reliability and analyst speed.
 
-**DMARC toolkit** — combining dead-simple, reliable scripts with advanced, experimental features like GPT analysis and Prometheus dashboards.
+## Why this project
 
-> Lightweight. Brutal. Flexible. Just like a good kettlebell workout.
+- **Impact:** Reduces manual effort in DMARC validation, parsing, and reporting workflows.
+- **Scale:** Supports direct CLI use and automation-friendly execution paths.
+- **Use case:** Domain email-auth auditing, report parsing, and operational monitoring.
 
----
+## Demo media
+
+- Screenshot: ![DMARC.exe terminal screenshot](docs/media/terminal-screenshot.png)
+- Demo GIF: ![DMARC.exe demo](docs/media/demo.gif)
+
+## Capability snapshot
+
+- DMARC record validation and XML parsing
+- Optional advanced reporting and metrics components
+- Daily-run and cron-oriented workflow support
 
 ## 🧱 Core Features (Low Risk, High Certainty)
 
